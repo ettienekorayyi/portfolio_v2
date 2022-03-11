@@ -1,5 +1,38 @@
+/* Dark Mode */
 .Home {
-    background-color: #f5c126;
+    background-color: #f5c126; /* #111 #f5c126 */
     /*width: 100vw; This overflows the page*/
     height: 100vh; /*100rem*/
   }
+
+.hero_header h1 {
+  margin: 0;
+  font-size: 80px;
+  font-family: serif;
+  text-align: center;
+}
+
+.hero_header h1 {
+  position: relative;
+  top: 10rem;
+  left: 3rem;
+}
+
+.text {
+  margin: 0;
+  font-size: 15px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.text {
+  position: relative;
+  top: 10rem;
+  left: 5rem;
+}
+
+/* Dark Mode */
+.content * {
+  color: #111; /* #111 #f5c126 */
+  text-shadow: 0 0 3px #281010, 0 4px 15px #535819
+}
