@@ -1,13 +1,18 @@
 import './HoverSideNav.css';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import HomeIcon from '@mui/icons-material/Home';
+import PersonIcon from '@mui/icons-material/Person';
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+import LaptopIcon from '@mui/icons-material/Laptop';
 
 export const HoverSideNav = () => {
     return (
-        <div id="HoverSideNav" className="SideNav">
-            <a href="#" id="home">Home</a>
-            <a href="#" id="about">About</a>
-            <a href="#" id="experience">Experience</a>
-            <a href="#" id="projects">Projects</a>
-            <a href="#" id="contact">Contact</a>
+        <div className="sidenav">
+            <a href="#" id="home">Home <HomeIcon id="homeIcon" /> </a>
+            <a href="#" id="about">About <PersonIcon id="personIcon"/> </a>
+            <a href="#" id="experience">Work <BusinessCenterIcon id="workIcon"/></a>
+            <a href="#" id="projects">Projects <LaptopIcon id="projectsIcon"/></a>
+            <a href="#" id="contact">Contact <TelegramIcon id="telegramIcon" /></a>
         </div>
     );
 }

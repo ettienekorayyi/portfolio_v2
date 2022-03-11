@@ -1,36 +1,56 @@
-#HoverSideNav a {
-  position: absolute;
-  top: -1px;
-  left: -150px;
-  transition: 0.3s;
-  padding: 15px;
-  width: 200px;
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -100px;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 50px;
+  transition: 0.45s;
+}
+
+.sidenav a {
+  margin-top: 1rem;
+  padding: 16px 26px 16px 26px;
   text-decoration: none;
-  font-size: 20px;
-  color: white;
-  border-radius: 0 5px 5px 0;
-  background-color: black;
-  height: 100rem;
+  font-size: 27;
+  color: #f5c126;
+  display: block;
 }
 
-#home {
-    top: 20px;
-    background-color: #04AA6D;
+.sidenav a:hover {
+  color: #f1f1f1;
+  left: 0;
 }
 
-#about {
-    top: 80px;
+#telegramIcon {
+    position: relative;
+    top: 6px;
+    margin-left: 22px
 }
 
-#experience {
-    top: 140px;
+#projectsIcon {
+  position: relative;
+  top: 6px;
+  margin-left: 17px
 }
 
-#projects {
-    top: 200px;
+#workIcon {
+  position: relative;
+  top: 6px;
+  margin-left: 38px
 }
 
-#contact {
-    top: 200px;
-    
+#homeIcon,
+#personIcon {
+  position: relative;
+  top: 6px;
+  margin-left: 34px
+}
+
+
+.sidenav:hover {
+  left: 0;
 }
