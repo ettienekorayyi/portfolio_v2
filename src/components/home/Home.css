@@ -1,0 +1,5 @@
+.Home {
+    background-color: #f5c126;
+    /*width: 100vw; This overflows the page*/
+    height: 100vh; /*100rem*/
+  }
