@@ -1,0 +1,66 @@
+
+/* Dark Mode */
+.About {
+  background-color: #f5c126; /* #111 #f5c126 */
+  /*width: 100vw; This overflows the page*/
+  height: 100vh; /*100rem*/
+}
+
+.row {
+  display: flex;
+}
+
+.summary {
+  position: relative;
+  left: 10rem;
+  width: 40rem;
+  top: -10rem;
+}
+
+.column {
+  flex-grow: 1;
+  height: 100vh; 
+}
+
+.item2 img {
+  height: inherit;
+  opacity: 0.8;
+  filter: brightness(50%);
+}
+
+.item1 {
+  flex-grow: 1;
+  width: 100rem;
+}
+
+.item2 {
+  flex-grow: 2;
+}
+
+div#curve1 svg {
+  transform: rotate(270deg);
+  position: relative;
+  top: 14rem;
+  height: 10vh;
+}
+
+div#curve1 svg {
+  transform: rotate(270deg);
+  position: relative;
+  top: 14rem;
+  left: 40rem;
+  height: 25.4vh;
+  z-index: 1;
+}
+
+.description {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+
+img.tech {
+  width: 4rem;
+  padding: 1.5%;
+}
