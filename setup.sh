@@ -10,3 +10,8 @@ function create_gitignore () {
 }
 
 create_gitignore
+
+#TODOS
+
+# Create pull_request_template
+# Install npm modules

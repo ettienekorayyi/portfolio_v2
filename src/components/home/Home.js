@@ -9,7 +9,7 @@ import CssBaseline from '@mui/material/CssBaseline';;
 export const Home = () => {
   return (
     <React.Fragment>
-      <div className="Home">
+      <div className="Home" id='home'>
         <CssBaseline />
         <HoverSideNav />
         <Container maxWidth="lg">

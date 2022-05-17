@@ -8,8 +8,8 @@ import LaptopIcon from '@mui/icons-material/Laptop';
 export const HoverSideNav = () => {
     return (
         <div className="sidenav">
-            <a href="#" id="home">Home <HomeIcon id="homeIcon" /> </a>
-            <a href="#" id="about">About <PersonIcon id="personIcon"/> </a>
+            <a href="#home" id="home">Home <HomeIcon id="homeIcon" /> </a>
+            <a href="#about" id="about">About <PersonIcon id="personIcon"/> </a>
             <a href="#" id="experience">Work <BusinessCenterIcon id="workIcon"/></a>
             <a href="#" id="projects">Projects <LaptopIcon id="projectsIcon"/></a>
             <a href="#" id="contact">Contact <TelegramIcon id="telegramIcon" /></a>
