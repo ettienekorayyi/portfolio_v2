@@ -4,12 +4,19 @@ import HomeIcon from '@mui/icons-material/Home';
 import PersonIcon from '@mui/icons-material/Person';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import LaptopIcon from '@mui/icons-material/Laptop';
+import { smoothScroll } from '../../utils/scroll';
 
-export const HoverSideNav = () => {
+
+
+export const HoverSideNav = ({target}) => {
+    const onNavClick = (e) => {
+        smoothScroll(target)
+    }    
+
     return (
         <div className="sidenav">
-            <a href="#home" id="home">Home <HomeIcon id="homeIcon" /> </a>
-            <a href="#about" id="about">About <PersonIcon id="personIcon"/> </a>
+            <a  id="home" onClick={onNavClick}>Home <HomeIcon id="homeIcon" /> </a>
+            <a  id="about" onClick={onNavClick}>About <PersonIcon id="personIcon"/> </a>
             <a href="#" id="experience">Work <BusinessCenterIcon id="workIcon"/></a>
             <a href="#" id="projects">Projects <LaptopIcon id="projectsIcon"/></a>
             <a href="#" id="contact">Contact <TelegramIcon id="telegramIcon" /></a>
