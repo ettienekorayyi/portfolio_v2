@@ -1,5 +1,5 @@
 # Stephen Melben Corral v2
-This is my website portfolio developed to showcase my skills and experience as well as my passion in software development.
+This is my website portfolio developed to showcase my skills and experience as well as my passion in software development. This portfolio is created using React Hooks for the front end.
 
 # Technologies Used
 - React
