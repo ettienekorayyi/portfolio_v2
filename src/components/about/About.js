@@ -13,8 +13,10 @@ import wave from "../../img/wave.png";
 
 import './About.css';
 import { HoverSideNav } from "../navigation/HoverSideNav";
+import { BriefSummaryTitleLabels, BriefSummaryContentLabels } from '../../common/Labels';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';;
+
 
 const AboutContent = () => {
     
@@ -23,15 +25,10 @@ const AboutContent = () => {
         <>
             <div className="content summary">
                 <div className="title">
-                    <h1>A Brief Summary of Myself</h1>
+                    <BriefSummaryTitleLabels />
                 </div>
                 <div className="description text-content">
-                    <p>
-                        Hi folks, I'm Stephen, I love building, breaking, and rebuilding stuff.
-                        I enjoy software development and I'm currently engaged in IT volunteer at
-                        Code.Sydney where I assisted them with web development with 3 of their
-                        projects in which, two of those projects I lead.
-                    </p>
+                    <BriefSummaryContentLabels />
                 </div>
             </div>
             <div className="content summary">
