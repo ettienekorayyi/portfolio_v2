@@ -7,7 +7,6 @@ import LaptopIcon from '@mui/icons-material/Laptop';
 import { smoothScroll } from '../../utils/scroll';
 
 
-
 export const HoverSideNav = ({target}) => {
     const onNavClick = (e) => {
         smoothScroll(target)
@@ -15,8 +14,8 @@ export const HoverSideNav = ({target}) => {
 
     return (
         <div className="sidenav">
-            <a  id="home" onClick={onNavClick}>Home <HomeIcon id="homeIcon" /> </a>
-            <a  id="about" onClick={onNavClick}>About <PersonIcon id="personIcon"/> </a>
+            <a href="#" id="home" onClick={onNavClick}>Home <HomeIcon id="homeIcon" /> </a>
+            <a href="#" id="about" onClick={onNavClick}>About <PersonIcon id="personIcon"/> </a>
             <a href="#" id="experience">Work <BusinessCenterIcon id="workIcon"/></a>
             <a href="#" id="projects">Projects <LaptopIcon id="projectsIcon"/></a>
             <a href="#" id="contact">Contact <TelegramIcon id="telegramIcon" /></a>
