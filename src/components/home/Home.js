@@ -14,7 +14,7 @@ export const Home = () => {
         <HoverSideNav />
         <Container maxWidth="lg">
           <Box sx={{ height: '100vh' }}>
-            <div className="content">
+            <div className="font_style content">
               <div className="hero_header">
                 <h1>Stephen Melben Corral</h1>
               </div>
