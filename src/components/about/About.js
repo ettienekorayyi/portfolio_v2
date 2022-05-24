@@ -81,7 +81,10 @@ export const About = () => {
 
                         <AboutContent />
                     </div>
-                    <div className="column item2" style={{ backgroundColor: "black" }}>
+                    <div 
+                        className="column item2" 
+                        style={{ backgroundColor: "black" }}
+                    >
                         <img src={photo} />
                     </div>
                 </Box>
