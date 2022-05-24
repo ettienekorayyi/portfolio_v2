@@ -75,9 +75,7 @@ export const About = () => {
                 <HoverSideNav target={target} />
                 <Box sx={{ height: '100%', overflowY: 'hidden' }} className="row">
                     <div className="column item1">
-                        <div id="curve1">
-                            <img src={wave} />
-                        </div>
+                        <div id="curve1"><img src={wave} /></div>
 
                         <AboutContent />
                     </div>
