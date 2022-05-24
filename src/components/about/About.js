@@ -19,11 +19,9 @@ import CssBaseline from '@mui/material/CssBaseline';;
 
 
 const AboutContent = () => {
-    
-    
     return (
         <>
-            <div className="content summary">
+            <div className="font_style content summary">
                 <div className="title">
                     <BriefSummaryTitleLabels />
                 </div>
@@ -31,7 +29,7 @@ const AboutContent = () => {
                     <BriefSummaryContentLabels />
                 </div>
             </div>
-            <div className="content summary">
+            <div className="font_style content summary">
                 <div className="title">
                     <h1>Skills & Technologies</h1>
                 </div>

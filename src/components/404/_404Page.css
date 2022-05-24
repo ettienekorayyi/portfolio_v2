@@ -1,0 +1,32 @@
+/* Dark Mode */
+._404Page {
+    background-color: #f5c126; /* #111 #f5c126 */
+    height: 100vh; /*100rem*/
+  }
+
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    width: 50vw;
+}
+
+.error_style_title {
+    background-color: black;
+    color: white;
+}
+
+.error_style_subtitle {
+    background-color: white;
+    color: black;
+}
+
+.skew {
+    transform: skew(-10deg,-2deg) rotate(-3deg)
+}
+
+.error_title {
+    text-align: center;
+    font-size: xxx-large;
+}

@@ -37,7 +37,7 @@
 }
 
 /* Dark Mode */
-.content * {
+.font_style * {
   color: #111; /* #111 #f5c126 */
-  text-shadow: 0 0 3px #281010, 0 4px 15px #535819
+  
 }
