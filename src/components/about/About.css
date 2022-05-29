@@ -2,7 +2,6 @@
 /* Dark Mode */
 .About {
   background-color: #f5c126; /* #111 #f5c126 */
-  /*width: 100vw; This overflows the page*/
   height: 100vh; /*100rem*/
 }
 
@@ -53,7 +52,7 @@ div#wrapper {
 
 #curve1 img#wave {
   position: absolute; /* absolute */
-  left: 46rem;/* 74rem  46rem*/
+  /*left: 46rem; 74rem  46rem*/
   top: 0rem; /* 0rem 46.6rem*/
   height: 100vh;
   z-index: 1;
