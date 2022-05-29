@@ -45,15 +45,25 @@ div#curve1 svg {
   height: 10vh;
 }
 
+div#wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+}
 
-
-#curve1 img {
-  position: absolute;
-  left: 54rem;
-  top: 46.6rem;
+#curve1 img#wave {
+  position: absolute; /* absolute */
+  left: 46rem;/* 74rem  46rem*/
+  top: 0rem; /* 0rem 46.6rem*/
   height: 100vh;
   z-index: 1;
-  /* border: 1px solid gray;  51.8rem*/
+  /*border: 1px solid gray;   51.8rem*/
+}
+
+#me {
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .description {

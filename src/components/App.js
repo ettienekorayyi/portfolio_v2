@@ -8,8 +8,10 @@ function App() {
   return (
     <div className="App">
       <Home />
+      
       <About />
       <_404Page />
+      {/**/}
     </div>
   );
 }

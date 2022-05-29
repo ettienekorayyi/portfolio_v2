@@ -20,7 +20,7 @@ import CssBaseline from '@mui/material/CssBaseline';;
 
 const AboutContent = () => {
     return (
-        <>
+        <div className="AboutContent">
             <div className="font_style content summary">
                 <div className="title">
                     <BriefSummaryTitleLabels />
@@ -48,7 +48,7 @@ const AboutContent = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
@@ -70,22 +70,22 @@ export const About = () => {
     }, [])
 
     return (
-            <div ref={aboutRef} className="About" id="about">
-                <CssBaseline />
-                <HoverSideNav target={target} />
-                <Box sx={{ height: '100%', overflowY: 'hidden' }} className="row">
-                    <div className="column item1">
-                        <div id="curve1">
-                            <img src={wave} />
-                        </div>
+        <div ref={aboutRef} className="About" id="about">
+            <CssBaseline />
+            <HoverSideNav target={target} />
+            <Box sx={{ height: '100%', overflowY: 'hidden' }} className="row">
+                <div className="column item1">
+                    <div id="wrapper">
+                        <div id="curve1"><img id='wave' src={wave} /></div>
+                    </div>
+                    <AboutContent />
+                </div>
+                <div className="column item2" style={{ backgroundColor: "black" }}>
+                    <div id="wrapper"><img id='me' src={photo} /></div>
+                </div>
 
-                        <AboutContent />
-                    </div>
-                    <div className="column item2" style={{ backgroundColor: "black" }}>
-                        <img src={photo} />
-                    </div>
-                </Box>
-            </div>
-        
+            </Box>
+        </div>
+
     );
 }
