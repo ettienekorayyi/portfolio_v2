@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
 import photo from "../../img/stephen.jpg";
 import csharp from "../../img/icons-csharp.png";
 import css3 from "../../img/icons-css3.png";
@@ -18,19 +19,20 @@ import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';;
 
 
-const AboutContent = () => {
+const AboutContent = ({matches}) => {
+    const classType = `font_style content ${matches === true ? 'summary_mobile' : 'summary_desktop'}`;
     return (
         <div className="AboutContent">
-            <div className="font_style content summary">
-                <div className="title">
+            <div className={classType}>
+                <div className="title" style={{  width: matches === true ? '19rem' : '29rem' }} >
                     <BriefSummaryTitleLabels />
                 </div>
-                <div className="description text-content">
+                <div className="description text-content" style={{ width: matches === true ? '19rem' : '28rem', letterSpacing: '4px' }}>
                     <BriefSummaryContentLabels />
                 </div>
             </div>
-            <div className="font_style content summary">
-                <div className="title">
+            <div className={classType}>
+                <div className="title" style={{ width: matches === true ? '19rem' : '29rem'}} >
                     <h1>Skills & Technologies</h1>
                 </div>
                 <div className="description text-content">
@@ -64,6 +66,17 @@ export const About = () => {
     const aboutRef = useRef()
     const [target, setTarget] = useState('');
 
+    const theme = useTheme({
+        breakpoints: {
+            values: {
+                xs: 0,
+                sm: 412,
+            },
+        },
+    });
+
+    const matches = useMediaQuery(theme.breakpoints.down('sm'));
+
     useEffect(() => {
         setTarget(aboutRef.current)
         //console.log(aboutRef.current)
@@ -76,12 +89,14 @@ export const About = () => {
             <Box sx={{ height: '100%', overflowY: 'hidden' }} className="row">
                 <div className="column item1">
                     <div id="wrapper">
-                        <div id="curve1"><img id='wave' src={wave} /></div>
+                        <div id="curve1"><img className={matches === true ? 'wave_mobile' : 'wave_desktop'} src={wave} /></div>
                     </div>
-                    <AboutContent />
+                    <AboutContent matches={matches} />
                 </div>
                 <div className="column item2" style={{ backgroundColor: "black" }}>
-                    <div id="wrapper"><img id='me' src={photo} /></div>
+                    <div className={matches === true ? 'wrapper_mobile' : 'wrapper_desktop'}>
+                        <img id='me' src={photo} />
+                    </div>
                 </div>
 
             </Box>

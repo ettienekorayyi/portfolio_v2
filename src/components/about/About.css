@@ -1,4 +1,3 @@
-
 /* Dark Mode */
 .About {
   background-color: #f5c126; /* #111 #f5c126 */
@@ -9,17 +8,29 @@
   display: flex;
 }
 
-.summary {
+.summary_desktop {
   position: relative;
   left: 10rem;
   width: 40rem;
-  top: 8rem;
+  top: 5rem;
   margin: 3%;
 }
 
+.summary_mobile {
+  position: relative;
+  left: 4rem;
+  width: 20rem;/*27rem*/
+  top: 1rem;
+  margin: 3%;
+  padding: 2%;
+  font-size: 14px;
+}
+
+
+
 .column {
   flex-grow: 1;
-  height: 100vh; 
+  height: 100vh;
 }
 
 .item2 img {
@@ -44,19 +55,27 @@ div#curve1 svg {
   height: 10vh;
 }
 
-div#wrapper {
+.wrapper_desktop {
   position: relative;
   top: 0;
   left: 0;
 }
 
-#curve1 img#wave {
+.wrapper_mobile {
+  display: none;
+}
+
+#curve1 img.wave_desktop {
   position: absolute; /* absolute */
-  /*left: 46rem; 74rem  46rem*/
-  top: 0rem; /* 0rem 46.6rem*/
+  left: 46rem; /* 74rem  46rem*/
+   /*top: 0rem; 0rem 46.6rem*/
   height: 100vh;
   z-index: 1;
   /*border: 1px solid gray;   51.8rem */
+}
+
+#curve1 img.wave_mobile {
+  display: none;
 }
 
 #me {
@@ -70,7 +89,6 @@ div#wrapper {
   line-height: 1.5;
   letter-spacing: 2px;
 }
-
 
 img.tech {
   width: 4rem;
