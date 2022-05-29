@@ -1,35 +1,53 @@
 /* Dark Mode */
 .Home {
     background-color: #f5c126; /* #111 #f5c126 */
-    /*width: 100vw; This overflows the page*/
     height: 100vh; /*100rem*/
-  }
+}
+
 
 .hero_header h1 {
   margin: 0;
   font-size: 80px;
-  /*font-family: 'Montserrat', sans-serif; serif*/
   text-align: center;
 }
+
 
 .hero_header h1 {
   position: relative;
   top: 10rem;
   left: 3rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
-.text {
+/***************************************
+  Adjusts the css based on the viewport
+***************************************/
+.text_desktop {
   margin: 0;
   font-size: 15px;
-  /* font-family: 'Montserrat', sans-serif; */
   text-align: center;
 }
 
-.text {
+
+.text_desktop {
   position: relative;
   top: 10rem;
   left: 5rem;
 }
+
+.text_mobile {
+  width: 90%;/**/
+  position: relative;
+  top: 10rem;
+  left: 3rem !important;
+  margin: 0 auto;
+  font-size: 12px;
+  text-align: center;
+}
+/***************************************
+  Adjusts the css based on the viewport
+***************************************/
 
 .content {
   position: relative;
