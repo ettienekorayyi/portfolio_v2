@@ -10,7 +10,6 @@ import CssBaseline from '@mui/material/CssBaseline';;
 
 export const Home = () => {
   const theme = useTheme({
-    
     breakpoints: {
       values: {
         xs: 0,
