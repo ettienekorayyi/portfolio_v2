@@ -1,0 +1,23 @@
+/* Dark Mode */
+.Contact {
+  background-color: #f5c126; /* #111 #f5c126 */
+  height: 100vh; /*100rem*/
+  gap: 50px;
+}
+
+#col-form {
+    background-color: inherit;
+    height: 100vh;
+}
+
+#col-div {
+    background-color: black;
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%; /**/
+    gap: 0;
+    padding: 0;
+  }
