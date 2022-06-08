@@ -19,6 +19,7 @@ export const Contact = () => {
 
     const matches = useMediaQuery(theme.breakpoints.down('sm'));
     const classType = matches === true ? 'wave_mobile' : 'wave_desktop';
+    
     return (
         <div className="Contact">
             <div className='grid-container'>
@@ -26,56 +27,54 @@ export const Contact = () => {
                     <Box
                         component="form"
                         sx={{
-                            '& > :not(style)': { m: 1, width: '35ch' },
+                            '& > :not(style)': { m: 1, width: '30ch' },
                             margin: '10% 30%'
                         }}
                         noValidate
                         autoComplete="off"
                     >
-                        <div >
+                        <div className='form_content'>
                             <h1 style={{ textAlign: 'center', fontSize: '50px' }}>Contact Me</h1>
                             <TextField
                                 id="filled-basic"
+                                className={matches === true ? 'mobile_field' : 'desktop_field'}
                                 label="Name"
                                 variant="filled"
-                                style={{ width: '25vw', marginTop: '5%', marginLeft: '6%' }}
+                                
                             />
                             <TextField
                                 id="filled-basic"
+                                className={matches === true ? 'mobile_field' : 'desktop_field'}
                                 label="Email"
                                 variant="filled"
-                                style={{ width: '25vw', marginTop: '5%', marginLeft: '6%' }}
+                                
                             />
                             <TextField
                                 id="filled-basic"
+                                className={matches === true ? 'mobile_field' : 'desktop_field'}
                                 label="Subject"
                                 variant="filled"
-                                style={{ width: '25vw', marginTop: '5%', marginLeft: '6%' }}
+                                
                             />
 
                             <TextField
                                 id="filled-multiline-static"
+                                className={matches === true ? 'mobile_field' : 'desktop_field'}
                                 label="Your Message"
                                 multiline
                                 rows={4}
-                                variant="filled"
-                                style={{ width: '25vw', marginTop: '5%', marginLeft: '6%' }}
+                                variant="filled"   
                             />
 
                             <Button
                                 variant="outlined"
-                                style={{
-                                    color: 'black',
-                                    borderColor: 'black',
-                                    margin: '5% 0',
-                                    height: '7vh', 
-                                    marginLeft: '6%'
-                                }}
-                            >Outlined</Button>
+                                className={matches ? 'mobile_contact_btn' : 'desktop_contact_btn'}
+                                
+                            >Send</Button>
                         </div>
                     </Box>
                 </div>
-                <div id='col-div'>
+                <div id={matches === true ? 'mobile_col-div' : 'col-div'}>
                     <div id="curve1">
                         <img className={classType} style={{ left: '42rem' }} src={wave} />
                     </div>
