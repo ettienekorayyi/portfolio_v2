@@ -1,5 +1,17 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+[Bb]in/
+[Oo]bj/
+
 # dependencies
 /ClientApp/node_modules
 /.pnp
@@ -12,8 +24,7 @@
 /build
 
 # vscode
- .vscode/settings.json
- .vscode/tasks.json
+.vscode/
 
 # binaries
 bin/
