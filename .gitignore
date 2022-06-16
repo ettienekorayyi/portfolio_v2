@@ -17,6 +17,9 @@ x64/
 /.pnp
 .pnp.js
 
+# API appsettings
+*/appsettings.[D|d]evelopment.json
+
 # testing
 /coverage
 
@@ -28,6 +31,10 @@ x64/
 
 # binaries
 bin/
+
+# nuget packages
+**/packages/*
+!**/packages/repositories.config
 
 # misc
 .DS_Store
