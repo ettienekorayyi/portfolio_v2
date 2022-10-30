@@ -1,10 +1,11 @@
 # Stephen Melben Corral v2
-This is my website portfolio developed to showcase my skills and experience as well as my passion in software development. This portfolio is created using React Hooks for the front end.
+This is my website portfolio developed to showcase my skills and experience as well as my passion in software development. This portfolio is created using React Hooks for the front end, .NET CORE Web API and XUnit.
 
 # Technologies Used
 - React
 - Bash
 - C#/.NET Core
+- XUnit/Moq
 
 # Deployment To Github Pages
 - To deploy the portfolio in github pages, you need to do the following:
