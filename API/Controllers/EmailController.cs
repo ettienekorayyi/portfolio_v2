@@ -40,17 +40,10 @@ namespace API.Controllers
         }
 
         [HttpPost(Name = "SendEmail")]
-        public async Task<IActionResult> SendEmail([FromForm] Email emailRequest) 
+        public async Task<IActionResult> SendEmail([FromForm] Email emailRequest)
         {
-            try
-            {
-                await _emailServices.SendEmailAsync(emailRequest);
-                return Ok();
-            }
-            catch(Exception e)
-            {
-                throw;
-            }
+            await _emailServices.SendEmailAsync(emailRequest);
+            return Ok();
         }
 
     }

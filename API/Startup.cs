@@ -14,6 +14,10 @@ using Microsoft.OpenApi.Models;
 using API.Models;
 using API.Interfaces;
 using API.Services;
+//using System.Net.Mail;
+using MailKit.Net.Smtp;
+using MailKit;
+using MimeKit;
 
 namespace API
 {
@@ -36,6 +40,9 @@ namespace API
             });
             services.Configure<EmailSettings>(Configuration.GetSection("EmailSettings"));
             services.AddTransient<IEmailServices, EmailServices>();
+            services.AddScoped<ISmtpClient,SmtpClient>(); 
+            services.AddScoped<MimeMessage>();
+            services.AddScoped<TextPart>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

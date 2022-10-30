@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { forwardRef } from "react";
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import photo from "../../img/stephen.jpg";
@@ -13,7 +13,6 @@ import ubuntu from "../../img/icons-ubuntu.png";
 import wave from "../../img/wave.png";
 
 import './About.css';
-import { HoverSideNav } from "../navigation/HoverSideNav";
 import { BriefSummaryTitleLabels, BriefSummaryContentLabels } from '../../common/Labels';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';;
@@ -54,18 +53,10 @@ const AboutContent = ({matches}) => {
     );
 }
 
-// Declare and Assign a useRef in a ref variable
-// Declare local state
-// Assign the ref variable as a prop
-// Set a useEffect 
-//    - use console to display the current ref value: TEMPORARY 
-//    - set the current ref to state
-// Pass the state as a props to navigation
 
-export const About = () => {
-    const aboutRef = useRef()
-    const [target, setTarget] = useState('');
 
+export const About = forwardRef((props, ref) => {
+    
     const theme = useTheme({
         breakpoints: {
             values: {
@@ -75,17 +66,13 @@ export const About = () => {
         },
     });
 
+   
     const matches = useMediaQuery(theme.breakpoints.down('sm'));
 
-    useEffect(() => {
-        setTarget(aboutRef.current)
-        //console.log(aboutRef.current)
-    }, [])
-
     return (
-        <div ref={aboutRef} className="About" id="about">
+        <div ref={ref} className="About" id="about">
             <CssBaseline />
-            <HoverSideNav target={target} />
+            
             <Box sx={{ height: '100%', overflowY: 'hidden' }} className="row">
                 <div className="column item1">
                     <div id="wrapper">
@@ -98,9 +85,7 @@ export const About = () => {
                         <img id='me' src={photo} />
                     </div>
                 </div>
-
             </Box>
         </div>
-
     );
-}
+});
