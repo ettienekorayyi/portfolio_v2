@@ -66,9 +66,8 @@ div#curve1 svg {
 }
 
 #curve1 img.wave_desktop {
-  position: absolute; /* absolute */
+  position: absolute;
   left: 46rem; /* 74rem  46rem*/
-   /*top: 0rem; 0rem 46.6rem*/
   height: 100vh;
   z-index: 1;
   /*border: 1px solid gray;   51.8rem */
