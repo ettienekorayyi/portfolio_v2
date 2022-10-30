@@ -19,14 +19,12 @@
 .summary_mobile {
   position: relative;
   left: 4rem;
-  width: 20rem;/*27rem*/
+  width: 20rem; /*27rem*/
   top: 1rem;
   margin: 3%;
   padding: 2%;
   font-size: 14px;
 }
-
-
 
 .column {
   flex-grow: 1;
@@ -92,4 +90,12 @@ div#curve1 svg {
 img.tech {
   width: 4rem;
   padding: 1.5%;
+}
+
+/*IPhone X*/
+@media screen and (min-width: 375px) {
+  .title,
+  .description.text-content {
+    width: 17rem !important;
+  }
 }
