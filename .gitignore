@@ -1,9 +1,24 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+[Bb]in/
+[Oo]bj/
+
 # dependencies
-/node_modules
+/ClientApp/node_modules
 /.pnp
 .pnp.js
+
+# API appsettings
+*/appsettings.[D|d]evelopment.json
 
 # testing
 /coverage
@@ -12,11 +27,14 @@
 /build
 
 # vscode
- .vscode/settings.json
- .vscode/tasks.json
+.vscode/
 
 # binaries
 bin/
+
+# nuget packages
+**/packages/*
+!**/packages/repositories.config
 
 # misc
 .DS_Store

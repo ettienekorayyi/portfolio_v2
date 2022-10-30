@@ -1,13 +1,14 @@
-import * as React from 'react';
+import React, { forwardRef } from "react";
 import Box from '@mui/material/Box';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import { HoverSideNav } from "../navigation/HoverSideNav";
 import './Contact.css';
 import wave from "../../img/wave.png";
 
-export const Contact = () => {
+export const Contact = forwardRef((props, ref) => {
     const theme = useTheme({
         breakpoints: {
             values: {
@@ -16,12 +17,13 @@ export const Contact = () => {
             },
         },
     });
-
+    
     const matches = useMediaQuery(theme.breakpoints.down('sm'));
     const classType = matches === true ? 'wave_mobile' : 'wave_desktop';
     
     return (
-        <div className="Contact">
+        <div ref={ref} className="Contact" id='contact'>
+            
             <div className='grid-container'>
                 <div id='col-form'>
                     <Box
@@ -82,4 +84,5 @@ export const Contact = () => {
             </div>
         </div>
     );
-}
+});
+

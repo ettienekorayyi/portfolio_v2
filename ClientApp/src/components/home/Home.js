@@ -1,14 +1,14 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import './Home.css';
-import { HoverSideNav } from "../navigation/HoverSideNav";
+//import { HoverSideNav } from "../navigation/HoverSideNav";
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';;
 
 
-export const Home = () => {
+export const Home = forwardRef((props, ref)  => {
   const theme = useTheme({
     breakpoints: {
       values: {
@@ -25,9 +25,9 @@ export const Home = () => {
 
   return (
     <React.Fragment>
-      <div className="Home" id='home'>
+      <div ref={ref} className="Home" id='home'>
         <CssBaseline />
-        <HoverSideNav />
+        {/* <HoverSideNav /> */}
         <Container maxWidth="lg">
           <Box style={{ height: '100vh' }}>
             <div className="font_style content">
@@ -44,4 +44,4 @@ export const Home = () => {
       </div>
     </React.Fragment>
   );
-}
+});
