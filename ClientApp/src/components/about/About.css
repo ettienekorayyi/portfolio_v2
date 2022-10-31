@@ -92,10 +92,16 @@ img.tech {
   padding: 1.5%;
 }
 
+@media screen and (min-width: 1025px) {
+  .title {
+    width: 29rem !important;
+  }
+}
+
 /*IPhone X*/
 @media screen and (min-width: 375px) {
   .title,
   .description.text-content {
-    width: 17rem !important;
+    width: 17rem ;
   }
 }
