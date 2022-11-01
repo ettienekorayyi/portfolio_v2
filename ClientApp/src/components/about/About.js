@@ -23,15 +23,15 @@ const AboutContent = ({matches}) => {
     return (
         <div className="AboutContent">
             <div className={classType}>
-                <div className="title" style={{  width: matches === true ? '19rem' : '29rem' }} >
+                <div className="title summary" >
                     <BriefSummaryTitleLabels />
                 </div>
-                <div className="description text-content" style={{ width: matches === true ? '19rem' : '28rem', letterSpacing: '4px' }}>
+                <div className="description text-content">
                     <BriefSummaryContentLabels />
                 </div>
             </div>
             <div className={classType}>
-                <div className="title" style={{ width: matches === true ? '19rem' : '29rem'}} >
+                <div className="title skills" >
                     <h1>Skills & Technologies</h1>
                 </div>
                 <div className="description text-content">
