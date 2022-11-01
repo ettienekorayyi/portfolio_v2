@@ -98,10 +98,14 @@ img.tech {
   }
 }
 
+
 /*IPhone X*/
 @media screen and (min-width: 375px) {
-  .title,
+  .skills { width: 17rem; }
+
+  .summary,
   .description.text-content {
-    width: 17rem ;
+    width: 17rem;
+    letter-spacing: inherit;
   }
 }
