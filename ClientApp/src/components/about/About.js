@@ -15,7 +15,7 @@ import wave from "../../img/wave.png";
 import './About.css';
 import { BriefSummaryTitleLabels, BriefSummaryContentLabels } from '../../common/Labels';
 import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';;
+import CssBaseline from '@mui/material/CssBaseline';
 
 
 const AboutContent = ({matches}) => {
