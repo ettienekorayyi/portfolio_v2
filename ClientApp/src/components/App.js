@@ -4,6 +4,7 @@ import { About } from "./about/About";
 import { _404Page } from "./404/_404Page";
 import { Contact } from "./contact/Contact";
 import { HoverSideNav } from "./navigation/HoverSideNav";
+import { Projects } from "./projects/Projects";
 
 /*
   1. Go to the component and make it component use forwardRef: 
@@ -22,19 +23,29 @@ import { HoverSideNav } from "./navigation/HoverSideNav";
   5. Pass the state called home in the HoverSide nav
     ie: <HoverSideNav home={home} />
 */
+
 function App() {
   const [home,setHome] = useState();
   const [contact,setContact] = useState();
   const [about,setAbout] = useState();
+  const [projects,setProjects] = useState();
+
   const homeRef = useRef();
   const contactRef = useRef();
   const aboutRef = useRef();
+  const projectsRef = useRef();
 
   useEffect(() => {
-    if (contactRef !== undefined && aboutRef !== undefined && homeRef !== undefined) {
+    if (
+      contactRef !== undefined  && 
+      aboutRef !== undefined    && 
+      homeRef !== undefined     && 
+      projectsRef !== undefined
+    ) {
       setContact(contactRef);
       setAbout(aboutRef);
       setHome(homeRef);
+      setProjects(projectsRef);
     }
   });
 
@@ -43,12 +54,12 @@ function App() {
 
   return (
     <div className="App">
-      <HoverSideNav contact={contact} about={about} home={home} />
+      <HoverSideNav contact={contact} about={about} home={home} projects={projects} />
       <Home ref={homeRef} />
       <About ref={aboutRef} />
-      <_404Page />
+      <Projects ref={projectsRef} />
       <Contact ref={contactRef} />
-      {/**/}
+      {/*<_404Page />*/}
     </div>
   );
 }

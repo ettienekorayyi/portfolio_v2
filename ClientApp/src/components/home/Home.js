@@ -5,7 +5,7 @@ import './Home.css';
 //import { HoverSideNav } from "../navigation/HoverSideNav";
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import CssBaseline from '@mui/material/CssBaseline';;
+import CssBaseline from '@mui/material/CssBaseline';
 
 
 export const Home = forwardRef((props, ref)  => {
