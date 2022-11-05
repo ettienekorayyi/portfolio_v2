@@ -49,9 +49,6 @@ function App() {
     }
   });
 
-  //console.log(contact);
-  //console.log(about);
-
   return (
     <div className="App">
       <HoverSideNav contact={contact} about={about} home={home} projects={projects} />
