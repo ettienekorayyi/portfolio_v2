@@ -3,9 +3,3 @@
   background-color: #f5c126; /* #111 #f5c126 */
   height: 50rem; /*100rem*/
 }
-
-/*IPhone X*/
-
-@media screen and (min-width: 375px) {
-  
-}
