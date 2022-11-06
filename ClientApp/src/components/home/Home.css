@@ -4,6 +4,15 @@
     height: 100vh; /*100rem*/
 }
 
+.hero_header-font {
+  font-family: "Comfortaa";
+}
+
+.text_mobile   h1,
+.title.skills  h1,
+.title.summary h1 {
+    font-family: "Dancing Script";
+}
 
 .hero_header h1 {
   margin: 0;
