@@ -12,7 +12,7 @@ import { projects } from '../../api/projects';
 const useStyles = makeStyles(() => ({
     root: { height: '51rem', overflowY: 'hidden' },
     mobileRoot: { height: '80rem', overflowY: 'hidden' },
-    mobileContent: { margin: '0 auto', width: '75vw' }
+    mobileContent: { margin: '0 auto', width: '70vw' }
   }));
 
 export const Projects = forwardRef((props, ref) => {
