@@ -12,7 +12,7 @@ namespace API.Interfaces
     {
         void Connect(string host, int port = 0, SecureSocketOptions options = SecureSocketOptions.Auto, CancellationToken cancellationToken = default);
         void Authenticate(string userName, string password, CancellationToken cancellationToken = default);
-        Task<string> SendAsync(MimeMessage message, CancellationToken cancellationToken = default, ITransferProgress progress = null);
+        //Task<string> SendAsync(MimeMessage message, CancellationToken cancellationToken = default, ITransferProgress progress = null);
         void Disconnect(bool quit, CancellationToken cancellationToken = default);
     }
 }
