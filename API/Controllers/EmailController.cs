@@ -44,6 +44,8 @@ namespace API.Controllers
         {
             Task emailSending = _emailServices.SendEmailAsync(emailRequest);
             
+            emailSending.Wait();
+            
             if(emailSending.Status == TaskStatus.RanToCompletion) 
             {
                 return Ok();
