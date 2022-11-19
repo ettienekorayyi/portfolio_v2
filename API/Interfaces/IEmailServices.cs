@@ -8,6 +8,6 @@ namespace API.Interfaces
 {
     public interface IEmailServices
     {
-        Task SendEmailAsync(Email email);
+        Task<bool> SendEmailAsync(Email email);
     }
 }

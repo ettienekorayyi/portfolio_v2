@@ -22,7 +22,7 @@ namespace API.Services
         private MimeMessage _email;
         private TextPart _textPart;
 
-        public EmailServices(IOptions<EmailSettings> emailSettings, 
+        public EmailServices(IOptions<EmailSettings> emailSettings,
             ISmtpClient smtpClient, MimeMessage email, TextPart textPart)
         {
             _emailSettings = emailSettings.Value;
@@ -31,7 +31,7 @@ namespace API.Services
             _textPart = textPart;
         }
 
-        public async Task SendEmailAsync(Email emailRequest)
+        public async Task<bool> SendEmailAsync(Email emailRequest)
         {
             try
             {
@@ -43,13 +43,14 @@ namespace API.Services
 
                 using (var client = _smtpClient)
                 {
-                    client.Connect(_emailSettings.Host,_emailSettings.Port);
-                    client.Authenticate(_emailSettings.Email,_emailSettings.Password);
+                    client.Connect(_emailSettings.Host, _emailSettings.Port);
+                    client.Authenticate(_emailSettings.Email, _emailSettings.Password);
                     await client.SendAsync(_email);
                     client.Disconnect(true);
                 }
+                return true;
             }
-            catch (SmtpFailedRecipientsException smtpFresx) 
+            catch (SmtpFailedRecipientsException smtpFresx)
             {
                 Trace.WriteLine(smtpFresx.Message);
             }
@@ -57,10 +58,11 @@ namespace API.Services
             {
                 Trace.WriteLine(smtpFrex.Message);
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Trace.WriteLine(e.Message);
             }
+            return false;
         }
 
     }
