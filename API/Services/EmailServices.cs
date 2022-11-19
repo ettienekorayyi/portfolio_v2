@@ -31,7 +31,7 @@ namespace API.Services
             _textPart = textPart;
         }
 
-        public async Task<bool> SendEmailAsync(Email emailRequest)
+        public async Task SendEmailAsync(Email emailRequest)
         {
             try
             {
@@ -48,7 +48,6 @@ namespace API.Services
                     await client.SendAsync(_email);
                     client.Disconnect(true);
                 }
-                return true;
             }
             catch (SmtpFailedRecipientsException smtpFresx)
             {
@@ -62,7 +61,6 @@ namespace API.Services
             {
                 Trace.WriteLine(e.Message);
             }
-            return false;
         }
 
     }
