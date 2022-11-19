@@ -33,12 +33,12 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebAPIv5", Version = "v1" });
             });
+            services.AddCors();
             services.Configure<EmailSettings>(Configuration.GetSection("EmailSettings"));
             services.AddTransient<IEmailServices, EmailServices>();
             services.AddScoped<ISmtpClient, SmtpClient>();
@@ -59,8 +59,14 @@ namespace API
             app.UseHttpsRedirection();
 
             app.UseRouting();
-            
-            app.UseCors(options => options.WithOrigins("https://stv-api-image.herokuapp.com/api/email").AllowAnyMethod());
+
+            app.UseCors(
+                options => options
+                    .WithOrigins("https://stv-api-image.herokuapp.com/api/email")
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowAnyOrigin()
+            );
 
             app.UseAuthorization();
 
