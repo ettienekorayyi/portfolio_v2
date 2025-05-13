@@ -10,7 +10,6 @@ import python from "../../img/icons-python.png";
 import react from "../../img/icons-react.png";
 import redux from "../../img/icons-redux.png";
 import ubuntu from "../../img/icons-ubuntu.png";
-//import wave from "../../img/wave.png";
 
 import './About.css';
 import { BriefSummaryTitleLabels, BriefSummaryContentLabels } from '../../common/Labels';
@@ -75,9 +74,6 @@ export const About = forwardRef((props, ref) => {
             
             <Box sx={{ height: '100%', overflowY: 'hidden' }} className="row">
                 <div className="column item1">
-                    {/*<div id="wrapper">
-                        <div id="curve1"><img className={matches === true ? 'wave_mobile' : 'wave_desktop'} src={wave} /></div>
-                    </div>*/}
                     <AboutContent matches={matches} />
                 </div>
                 <div className="column item2" style={{ backgroundColor: "#f5c126" }}>

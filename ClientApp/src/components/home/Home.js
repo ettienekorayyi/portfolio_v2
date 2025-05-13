@@ -2,7 +2,6 @@ import React, { forwardRef } from "react";
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import './Home.css';
-//import { HoverSideNav } from "../navigation/HoverSideNav";
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
