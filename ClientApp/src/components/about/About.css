@@ -105,7 +105,7 @@ img.tech {
 
   .summary,
   .description.text-content {
-    width: 17rem;
+    /*width: 17rem;*/
     letter-spacing: inherit;
   }
 }
