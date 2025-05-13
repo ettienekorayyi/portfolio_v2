@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio_v2/static/css/main.0fc3d64a.css",
-    "main.js": "/portfolio_v2/static/js/main.887bc535.js",
+    "main.css": "/portfolio_v2/static/css/main.fcabf62a.css",
+    "main.js": "/portfolio_v2/static/js/main.024907de.js",
     "static/js/787.d9a20797.chunk.js": "/portfolio_v2/static/js/787.d9a20797.chunk.js",
     "static/media/parramatta-eidsteddfod.png": "/portfolio_v2/static/media/parramatta-eidsteddfod.4dcfe3e8b676e113132a.png",
     "static/media/stephen.jpg": "/portfolio_v2/static/media/stephen.efa52fd40b51421e1ea3.jpg",
     "static/media/wave.png": "/portfolio_v2/static/media/wave.c2de71af3f6722c7e060.png",
     "static/media/lukas-carey-logo.png": "/portfolio_v2/static/media/lukas-carey-logo.86893b2307b5af776f39.png",
     "index.html": "/portfolio_v2/index.html",
-    "main.0fc3d64a.css.map": "/portfolio_v2/static/css/main.0fc3d64a.css.map",
-    "main.887bc535.js.map": "/portfolio_v2/static/js/main.887bc535.js.map",
+    "main.fcabf62a.css.map": "/portfolio_v2/static/css/main.fcabf62a.css.map",
+    "main.024907de.js.map": "/portfolio_v2/static/js/main.024907de.js.map",
     "787.d9a20797.chunk.js.map": "/portfolio_v2/static/js/787.d9a20797.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0fc3d64a.css",
-    "static/js/main.887bc535.js"
+    "static/css/main.fcabf62a.css",
+    "static/js/main.024907de.js"
   ]
 }
