@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const BriefSummaryTitleLabels = () => {
     return <h1>A Brief Summary of Myself</h1>;
 }
