@@ -1,7 +1,7 @@
 import React, { forwardRef } from "react";
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
-import photo from "../../img/stephen.jpg";
+import photo from "../../img/black dust particle.png";
 import csharp from "../../img/icons-csharp.png";
 import css3 from "../../img/icons-css3.png";
 import html from "../../img/icons-html.png";
@@ -10,7 +10,7 @@ import python from "../../img/icons-python.png";
 import react from "../../img/icons-react.png";
 import redux from "../../img/icons-redux.png";
 import ubuntu from "../../img/icons-ubuntu.png";
-import wave from "../../img/wave.png";
+//import wave from "../../img/wave.png";
 
 import './About.css';
 import { BriefSummaryTitleLabels, BriefSummaryContentLabels } from '../../common/Labels';
@@ -75,12 +75,12 @@ export const About = forwardRef((props, ref) => {
             
             <Box sx={{ height: '100%', overflowY: 'hidden' }} className="row">
                 <div className="column item1">
-                    <div id="wrapper">
+                    {/*<div id="wrapper">
                         <div id="curve1"><img className={matches === true ? 'wave_mobile' : 'wave_desktop'} src={wave} /></div>
-                    </div>
+                    </div>*/}
                     <AboutContent matches={matches} />
                 </div>
-                <div className="column item2" style={{ backgroundColor: "black" }}>
+                <div className="column item2" style={{ backgroundColor: "#f5c126" }}>
                     <div className={matches === true ? 'wrapper_mobile' : 'wrapper_desktop'}>
                         <img id='me' src={photo} />
                     </div>
