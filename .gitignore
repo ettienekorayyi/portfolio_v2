@@ -18,7 +18,7 @@ x64/
 .pnp.js
 
 # build
-/ClientApp/build
+/ClientApp/build/*
 
 # API appsettings
 */appsettings.[D|d]evelopment.json
