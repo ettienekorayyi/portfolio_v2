@@ -54,6 +54,7 @@ function App() {
       <HoverSideNav contact={contact} about={about} home={home} projects={projects} />
       <Home ref={homeRef} />
       <About ref={aboutRef} />
+      {/*<Skills ref={skillsRef} />*/}
       <Projects ref={projectsRef} />
       <Contact ref={contactRef} />
       {/*<_404Page />*/}
