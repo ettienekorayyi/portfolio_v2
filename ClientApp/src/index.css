@@ -8,6 +8,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.Home,.About, .Contact {
+  height: 70rem;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
