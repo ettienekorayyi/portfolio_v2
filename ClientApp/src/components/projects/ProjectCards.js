@@ -5,13 +5,14 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-const ProjectCards = ({ photo,url, title, description }) => {
+const ProjectCards = ({ photo,imgId, url, title, description }) => {
   const handler = () => window.open(url, '_blank');
 
   return (
     <Card sx={{ maxWidth: 345, marginTop: '5%' }} >
       <CardActionArea onClick={handler}>
         <CardMedia
+          id={imgId}
           component="img"
           height="140 "
           image={photo}

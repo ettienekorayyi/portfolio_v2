@@ -28,9 +28,10 @@ export const Projects = forwardRef((props, ref) => {
                         <Grid item xs={12}>
                             <Grid container justifyContent="center" spacing={2} className={classes.mobileContent}>
                                 {
-                                    projects.map(({ id,photo,url,title,description }) => (
+                                    projects.map(({ id,imgId, photo,url,title,description }) => (
                                         <Grid key={id} item>
                                             <ProjectCards
+                                                imgId={imgId}
                                                 photo={photo}
                                                 url={url}
                                                 title={title}
